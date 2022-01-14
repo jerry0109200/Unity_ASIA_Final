@@ -7,7 +7,7 @@ public class Rain : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Destroy(gameObject, 6);
+        Destroy(gameObject, 10);
         //о°ев
     }
 
@@ -25,7 +25,7 @@ public class Rain : MonoBehaviour
         var health = hit.GetComponent<HurtSystem>();
         if (health != null)
         {
-            health.Hurt(10);
+            health.Hurt(30);
         }
         Destroy(gameObject);
     }
